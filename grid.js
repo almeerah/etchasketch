@@ -9,7 +9,7 @@ document.querySelector(".grid").addEventListener("mouseover", function (event) {
         return;
       }
       else{
-        event.target.style.backgroundColor = "red";
+        event.target.style.backgroundColor = "black";
       }
       })
 
@@ -35,3 +35,15 @@ clearbtn.addEventListener('click',function() {
       x[i].style.backgroundColor = "#EEEBEB";
     }
   });
+
+  // const colorbtn = document.querySelector('#colorbtn');
+  // colorbtn.addEventListener('click',function() {
+  //   document.querySelector(".grid").addEventListener("mouseover", function (event) {
+  //         if (event.target.getAttribute('class') != "grid-item") {
+  //           return;
+  //         }
+  //         else{
+  //           event.target.style.backgroundColor = "black";
+  //         }
+  //         })
+  //   });

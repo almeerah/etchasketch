@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+
 .grid{
   display: grid;
   grid-gap: 0px;
@@ -6,6 +9,7 @@
   height: 640px;
   border: 3px solid rgba(0, 0, 0, 0.8);
   background-color: #EEEBEB;
+  margin: auto;
 }
 
 .grid-item {
@@ -15,4 +19,24 @@
   display: inline-block;
   /* flex-flow:column; */
   position: relative;
+}
+
+body{
+  text-align: center;
+}
+
+button {
+  margin:0 auto;
+  display:block;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-family: Syne;
+}
+
+h1{
+  font-family: Bungee Shade;
+}
+
+body{
+  background-color: #add8e6;
 }
