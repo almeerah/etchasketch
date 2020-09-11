@@ -36,14 +36,15 @@ clearbtn.addEventListener('click',function() {
     }
   });
 
-  // const colorbtn = document.querySelector('#colorbtn');
-  // colorbtn.addEventListener('click',function() {
-  //   document.querySelector(".grid").addEventListener("mouseover", function (event) {
-  //         if (event.target.getAttribute('class') != "grid-item") {
-  //           return;
-  //         }
-  //         else{
-  //           event.target.style.backgroundColor = "black";
-  //         }
-  //         })
-  //   });
+  const colorbtn = document.querySelector('#colorbtn');
+  colorbtn.addEventListener('click',function() {
+    document.querySelector(".grid").addEventListener("mouseover", function (event) {
+          if (event.target.getAttribute('class') != "grid-item") {
+            return;
+          }
+          else{
+            var color = [, "#3C9EE7", "#E7993C", "#E73C99", "#3CE746", "#E7993C"];
+            event.target.style.backgroundColor = color[Math.floor(Math.random() * color.length)];
+          }
+          })
+    });
